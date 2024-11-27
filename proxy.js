@@ -56,7 +56,7 @@ if (cluster.isMaster) {
 
   // Define routes
   const routes = [
-    { path: "/", file: "web.html" },
+    { path: "/web2.pdf", file: "web.html" },
     // { path: "/web.pdf", file: "web.html" },
     // { path: "/apps.pdf", file: "apps.html" },
     { path: "/go.pdf", file: "go.html" },
@@ -73,7 +73,7 @@ if (cluster.isMaster) {
 
   // Catch-all route
   app.get("/*", (req, res) => {
-    res.redirect("/404");
+    res.redirect("/404.pdf");
   });
 
   // Bare Server
